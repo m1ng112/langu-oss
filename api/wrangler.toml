@@ -1,0 +1,26 @@
+name = "langu-api"
+main = "src/index.ts"
+compatibility_date = "2024-01-29"
+
+# Development
+[env.dev]
+name = "langu-api-dev"
+
+# Production
+[env.production]
+name = "langu-api"
+routes = [
+  { pattern = "api.langu.app/*", zone_name = "langu.app" }
+]
+
+# Secrets (set via `wrangler secret put`)
+# - AZURE_SPEECH_KEY
+# - AZURE_SPEECH_REGION
+# - ANTHROPIC_API_KEY
+
+[observability]
+enabled = true
+
+[vars]
+AZURE_SPEECH_REGION = "japaneast"
+RATE_LIMIT_PER_DAY = 100

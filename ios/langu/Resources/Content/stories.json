@@ -1,0 +1,84 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "title": "Morning Routine",
+      "titleKorean": "아침 일과",
+      "emoji": "🌅",
+      "difficulty": "beginner",
+      "sentences": [
+        { "id": 1, "korean": "저는 매일 아침 일곱 시에 일어납니다.", "romanization": "Jeoneun maeil achim ilgop sie ireonamnida.", "translation": "I wake up at seven o'clock every morning." },
+        { "id": 2, "korean": "먼저 세수를 하고 이를 닦습니다.", "romanization": "Meonjeo sesureul hago ireul dakseumnida.", "translation": "First, I wash my face and brush my teeth." },
+        { "id": 3, "korean": "그 다음에 아침을 먹습니다.", "romanization": "Geu daeume achimeul meokseumnida.", "translation": "Then I eat breakfast." },
+        { "id": 4, "korean": "보통 밥과 김치를 먹어요.", "romanization": "Botong bapgwa gimchireul meogeoyo.", "translation": "I usually eat rice and kimchi." },
+        { "id": 5, "korean": "여덟 시에 집에서 나갑니다.", "romanization": "Yeodeol sie jibeseo nagamnida.", "translation": "I leave home at eight o'clock." },
+        { "id": 6, "korean": "지하철을 타고 회사에 갑니다.", "romanization": "Jihacheoreul tago hoesae gamnida.", "translation": "I take the subway to go to work." },
+        { "id": 7, "korean": "회사까지 삼십 분 걸려요.", "romanization": "Hoesakaji samsip bun geollyeoyo.", "translation": "It takes thirty minutes to get to work." }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "At the Café",
+      "titleKorean": "카페에서",
+      "emoji": "☕",
+      "difficulty": "beginner",
+      "sentences": [
+        { "id": 1, "korean": "오늘 친구와 카페에 갔어요.", "romanization": "Oneul chinguwa kapee gasseoyo.", "translation": "Today I went to a café with my friend." },
+        { "id": 2, "korean": "저는 아메리카노를 주문했어요.", "romanization": "Jeoneun amerikhanoreul jumunhaesseoyo.", "translation": "I ordered an Americano." },
+        { "id": 3, "korean": "친구는 카페라떼를 마셨어요.", "romanization": "Chinguneun khapelattereul masyeosseoyo.", "translation": "My friend drank a café latte." },
+        { "id": 4, "korean": "우리는 케이크도 먹었어요.", "romanization": "Urineun kheikheudo meogeosseoyo.", "translation": "We also ate cake." },
+        { "id": 5, "korean": "카페는 아주 조용했어요.", "romanization": "Khapeneun aju joyonghaesseoyo.", "translation": "The café was very quiet." },
+        { "id": 6, "korean": "우리는 두 시간 동안 이야기했어요.", "romanization": "Urineun du sigan dongan iyagihaesseoyo.", "translation": "We talked for two hours." },
+        { "id": 7, "korean": "정말 즐거운 시간이었어요.", "romanization": "Jeongmal jeulgeoun siganieosseoyo.", "translation": "It was a really enjoyable time." }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Weekend Plans",
+      "titleKorean": "주말 계획",
+      "emoji": "📅",
+      "difficulty": "intermediate",
+      "sentences": [
+        { "id": 1, "korean": "이번 주말에 여러 가지 계획이 있어요.", "romanization": "Ibeon jumale yeoreo gaji gyehoegi isseoyo.", "translation": "I have various plans for this weekend." },
+        { "id": 2, "korean": "토요일 오전에는 한국어 수업이 있어요.", "romanization": "Thoyoil ojeoneneun hangugeo sueobi isseoyo.", "translation": "On Saturday morning, I have Korean class." },
+        { "id": 3, "korean": "수업이 끝나면 친구들과 점심을 먹을 거예요.", "romanization": "Sueobi kkeunnamyeon chingudeulgwa jeomsimeul meogeul geoyeyo.", "translation": "After class, I will have lunch with my friends." },
+        { "id": 4, "korean": "오후에는 영화를 보러 갈 계획이에요.", "romanization": "Ohueneun yeonghwareul boreo gal gyehoegieyo.", "translation": "In the afternoon, I plan to go watch a movie." },
+        { "id": 5, "korean": "일요일에는 집에서 쉬면서 책을 읽을 거예요.", "romanization": "Iryoire jibeseo swimyeonseo chaegeul ilgeul geoyeyo.", "translation": "On Sunday, I will rest at home and read a book." },
+        { "id": 6, "korean": "저녁에는 가족과 함께 저녁 식사를 할 거예요.", "romanization": "Jeonyeogeneun gajokgwa hamkke jeonyeok siksareul hal geoyeyo.", "translation": "In the evening, I will have dinner with my family." },
+        { "id": 7, "korean": "월요일이 되기 전에 충분히 휴식을 취하고 싶어요.", "romanization": "Woryoiri doegi jeone chungbunhi hyusigeul chwihago sipeoyo.", "translation": "I want to get enough rest before Monday comes." }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "First Day at Work",
+      "titleKorean": "첫 출근",
+      "emoji": "💼",
+      "difficulty": "intermediate",
+      "sentences": [
+        { "id": 1, "korean": "오늘은 새 회사에서 첫 출근하는 날이에요.", "romanization": "Oneureun sae hoesaeseo cheot chulgeonhaneun narieyo.", "translation": "Today is my first day at the new company." },
+        { "id": 2, "korean": "아침 일찍 일어나서 정장을 입었어요.", "romanization": "Achim iljjik ireonaseo jeongjangeul ibeosseoyo.", "translation": "I woke up early and put on a suit." },
+        { "id": 3, "korean": "긴장이 되어서 아침을 많이 못 먹었어요.", "romanization": "Ginjangi doeeoseo achimeul mani mot meogeosseoyo.", "translation": "I was nervous, so I couldn't eat much breakfast." },
+        { "id": 4, "korean": "회사에 도착해서 인사팀에 갔어요.", "romanization": "Hoesae dochakhaeseo insathime gasseoyo.", "translation": "I arrived at the company and went to HR." },
+        { "id": 5, "korean": "새로운 동료들에게 자기소개를 했어요.", "romanization": "Saeroun dongnyodeulege jagisohaereul haesseoyo.", "translation": "I introduced myself to the new colleagues." },
+        { "id": 6, "korean": "모두 친절하게 환영해 주셨어요.", "romanization": "Modu chinjeolhage hwanyeonghae jusyeosseoyo.", "translation": "Everyone kindly welcomed me." },
+        { "id": 7, "korean": "내일부터 본격적으로 일을 시작할 거예요.", "romanization": "Naeilbuteo bongyeokjeogeuro ireul sijakhal geoyeyo.", "translation": "Starting tomorrow, I will begin working in earnest." }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Visiting Seoul",
+      "titleKorean": "서울 여행",
+      "emoji": "🏙️",
+      "difficulty": "advanced",
+      "sentences": [
+        { "id": 1, "korean": "지난 주에 처음으로 서울에 여행을 갔습니다.", "romanization": "Jinan jue cheoeumuro seoure yeohaengeul gassseumnida.", "translation": "Last week, I traveled to Seoul for the first time." },
+        { "id": 2, "korean": "서울은 현대적인 건물과 전통적인 궁궐이 조화를 이루고 있습니다.", "romanization": "Seourun hyeondaejeogin geonmulgwa jeontongjeoin gunggwori johwareul irugo isseumnida.", "translation": "Seoul is a harmony of modern buildings and traditional palaces." },
+        { "id": 3, "korean": "첫째 날에는 경복궁을 방문하여 한복을 입고 사진을 찍었습니다.", "romanization": "Cheotjjae nareneun gyeongbokgungeul bangmunhayeo hanbogeul ipgo sajineul jjigeossemnida.", "translation": "On the first day, I visited Gyeongbokgung Palace, wore hanbok, and took photos." },
+        { "id": 4, "korean": "명동에서는 화장품과 기념품을 샀고 맛있는 길거리 음식을 먹었습니다.", "romanization": "Myeongdongeseoneun hwajangpumgwa ginyeompumeul satgo masinneun gilgeori eumsigeul meogeossemnida.", "translation": "In Myeongdong, I bought cosmetics and souvenirs and ate delicious street food." },
+        { "id": 5, "korean": "남산타워에서 본 서울의 야경은 정말 아름다웠습니다.", "romanization": "Namsanthawoseo bon seoure yagyeongeun jeongmal areumdawossemnida.", "translation": "The night view of Seoul from Namsan Tower was really beautiful." },
+        { "id": 6, "korean": "다음에는 더 오래 머물면서 다른 지역도 방문하고 싶습니다.", "romanization": "Daeumeneun deo orae meomulmyeonseo dareun jiyeokdo bangmunhago sipseumnida.", "translation": "Next time, I want to stay longer and visit other areas." },
+        { "id": 7, "korean": "서울 여행은 제 인생에서 가장 기억에 남는 경험 중 하나입니다.", "romanization": "Seoul yeohaengeun je insaengeseo gajang gieoge namneun gyeongheom jung hanaimnida.", "translation": "The trip to Seoul is one of the most memorable experiences of my life." }
+      ]
+    }
+  ]
+}

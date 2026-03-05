@@ -1,0 +1,418 @@
+{
+  "units": [
+    {
+      "id": 1,
+      "emoji": "👋",
+      "title": "Greetings",
+      "description": "Essential Korean greetings",
+      "difficulty": "beginner",
+      "lessons": [
+        {
+          "id": 1,
+          "unitId": 1,
+          "order": 1,
+          "emoji": "👋",
+          "title": "Hello (Formal)",
+          "korean": "안녕하세요",
+          "romanization": "annyeonghaseyo",
+          "translation": "Hello (formal)",
+          "difficulty": "beginner",
+          "hint": "Break it into syllables: 안 (an) - 녕 (nyeong) - 하 (ha) - 세 (se) - 요 (yo). Keep your tone rising slightly at the end."
+        },
+        {
+          "id": 2,
+          "unitId": 1,
+          "order": 2,
+          "emoji": "🙏",
+          "title": "Thank You",
+          "korean": "감사합니다",
+          "romanization": "gamsahamnida",
+          "translation": "Thank you (formal)",
+          "difficulty": "beginner",
+          "hint": "Emphasize the first syllable 감 (gam). The ending 니다 (nida) should be crisp and clear."
+        },
+        {
+          "id": 3,
+          "unitId": 1,
+          "order": 3,
+          "emoji": "😊",
+          "title": "Nice to Meet You",
+          "korean": "만나서 반갑습니다",
+          "romanization": "mannaseo bangapseumnida",
+          "translation": "Nice to meet you",
+          "difficulty": "beginner",
+          "hint": "This is two words. Pause briefly between 만나서 and 반갑습니다. The ㅂ in 반 is a soft 'b' sound."
+        },
+        {
+          "id": 4,
+          "unitId": 1,
+          "order": 4,
+          "emoji": "👋",
+          "title": "Goodbye (Staying)",
+          "korean": "안녕히 가세요",
+          "romanization": "annyeonghi gaseyo",
+          "translation": "Goodbye (to someone leaving)",
+          "difficulty": "beginner",
+          "hint": "Use this when the other person is leaving and you're staying. 가세요 means 'please go'."
+        },
+        {
+          "id": 5,
+          "unitId": 1,
+          "order": 5,
+          "emoji": "🚶",
+          "title": "Goodbye (Leaving)",
+          "korean": "안녕히 계세요",
+          "romanization": "annyeonghi gyeseyo",
+          "translation": "Goodbye (when you're leaving)",
+          "difficulty": "beginner",
+          "hint": "Use this when you're leaving and the other person stays. 계세요 means 'please stay'."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "emoji": "🗣️",
+      "title": "Daily Phrases",
+      "description": "Common everyday expressions",
+      "difficulty": "beginner",
+      "lessons": [
+        {
+          "id": 6,
+          "unitId": 2,
+          "order": 1,
+          "emoji": "🙂",
+          "title": "I'm Fine",
+          "korean": "잘 지내요",
+          "romanization": "jal jinaeyo",
+          "translation": "I'm doing well",
+          "difficulty": "beginner",
+          "hint": "잘 (jal) means 'well'. Keep the flow smooth between the two words."
+        },
+        {
+          "id": 7,
+          "unitId": 2,
+          "order": 2,
+          "emoji": "😅",
+          "title": "Sorry",
+          "korean": "죄송합니다",
+          "romanization": "joesonghamnida",
+          "translation": "I'm sorry (formal)",
+          "difficulty": "beginner",
+          "hint": "The ㅈ in 죄 is a soft 'j' sound. Speak with sincere tone."
+        },
+        {
+          "id": 8,
+          "unitId": 2,
+          "order": 3,
+          "emoji": "🙋",
+          "title": "Excuse Me",
+          "korean": "실례합니다",
+          "romanization": "sillyehamnida",
+          "translation": "Excuse me",
+          "difficulty": "beginner",
+          "hint": "Use before asking someone a question or passing by. The ㄹㄹ is a rolled 'l' sound."
+        },
+        {
+          "id": 9,
+          "unitId": 2,
+          "order": 4,
+          "emoji": "✅",
+          "title": "Yes",
+          "korean": "네",
+          "romanization": "ne",
+          "translation": "Yes",
+          "difficulty": "beginner",
+          "hint": "Short and simple. The sound is between 'ne' and 'neh'."
+        },
+        {
+          "id": 10,
+          "unitId": 2,
+          "order": 5,
+          "emoji": "❌",
+          "title": "No",
+          "korean": "아니요",
+          "romanization": "aniyo",
+          "translation": "No",
+          "difficulty": "beginner",
+          "hint": "Three syllables: 아 (a) - 니 (ni) - 요 (yo). Keep it polite with the 요 ending."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "emoji": "🛒",
+      "title": "Shopping",
+      "description": "Useful shopping phrases",
+      "difficulty": "beginner",
+      "lessons": [
+        {
+          "id": 11,
+          "unitId": 3,
+          "order": 1,
+          "emoji": "💰",
+          "title": "How Much?",
+          "korean": "얼마예요?",
+          "romanization": "eolmayeyo?",
+          "translation": "How much is it?",
+          "difficulty": "beginner",
+          "hint": "Raise your tone at the end to indicate a question. 얼마 (eolma) means 'how much'."
+        },
+        {
+          "id": 12,
+          "unitId": 3,
+          "order": 2,
+          "emoji": "🛍️",
+          "title": "Give Me This",
+          "korean": "이것 주세요",
+          "romanization": "igeot juseyo",
+          "translation": "Please give me this",
+          "difficulty": "beginner",
+          "hint": "이것 (igeot) — the ㄱ at the end is silent before ㅈ. 주세요 (juseyo) should flow smoothly."
+        },
+        {
+          "id": 13,
+          "unitId": 3,
+          "order": 3,
+          "emoji": "👀",
+          "title": "Just Looking",
+          "korean": "그냥 보고 있어요",
+          "romanization": "geunyang bogo isseoyo",
+          "translation": "I'm just looking",
+          "difficulty": "beginner",
+          "hint": "Use when a shop clerk approaches. 그냥 means 'just' or 'only'."
+        },
+        {
+          "id": 14,
+          "unitId": 3,
+          "order": 4,
+          "emoji": "💳",
+          "title": "Card Payment",
+          "korean": "카드로 해주세요",
+          "romanization": "kadeuro haejuseyo",
+          "translation": "By card, please",
+          "difficulty": "beginner",
+          "hint": "카드 is 'card' (loanword from English). 로 indicates 'by' or 'with'."
+        },
+        {
+          "id": 15,
+          "unitId": 3,
+          "order": 5,
+          "emoji": "🧾",
+          "title": "Receipt Please",
+          "korean": "영수증 주세요",
+          "romanization": "yeongsujeung juseyo",
+          "translation": "Receipt, please",
+          "difficulty": "beginner",
+          "hint": "영수증 (yeongsujeung) means receipt. Focus on the 증 (jeung) ending sound."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "emoji": "🍜",
+      "title": "Restaurant",
+      "description": "Ordering food and drinks",
+      "difficulty": "intermediate",
+      "lessons": [
+        {
+          "id": 16,
+          "unitId": 4,
+          "order": 1,
+          "emoji": "🪑",
+          "title": "Table for Two",
+          "korean": "두 명이요",
+          "romanization": "du myeongiyo",
+          "translation": "Two people",
+          "difficulty": "intermediate",
+          "hint": "두 (du) means 'two'. 명 (myeong) is the counter for people."
+        },
+        {
+          "id": 17,
+          "unitId": 4,
+          "order": 2,
+          "emoji": "📋",
+          "title": "Menu Please",
+          "korean": "메뉴판 주세요",
+          "romanization": "menyupan juseyo",
+          "translation": "Menu, please",
+          "difficulty": "intermediate",
+          "hint": "메뉴판 (menyupan) combines the loanword 메뉴 with 판 (board/sheet)."
+        },
+        {
+          "id": 18,
+          "unitId": 4,
+          "order": 3,
+          "emoji": "🍲",
+          "title": "Order This",
+          "korean": "이거 주문할게요",
+          "romanization": "igeo jumunhalgeyo",
+          "translation": "I'll order this",
+          "difficulty": "intermediate",
+          "hint": "주문하다 means 'to order'. The 할게요 ending expresses intention."
+        },
+        {
+          "id": 19,
+          "unitId": 4,
+          "order": 4,
+          "emoji": "🌶️",
+          "title": "Not Spicy",
+          "korean": "안 맵게 해주세요",
+          "romanization": "an maepge haejuseyo",
+          "translation": "Not spicy, please",
+          "difficulty": "intermediate",
+          "hint": "안 negates the verb. 맵다 (maepda) means spicy. Useful for Korean food!"
+        },
+        {
+          "id": 20,
+          "unitId": 4,
+          "order": 5,
+          "emoji": "💵",
+          "title": "Check Please",
+          "korean": "계산해 주세요",
+          "romanization": "gyesanhae juseyo",
+          "translation": "Check, please",
+          "difficulty": "intermediate",
+          "hint": "계산 (gyesan) means calculation/bill. Common phrase when leaving a restaurant."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "emoji": "🚇",
+      "title": "Transportation",
+      "description": "Getting around in Korea",
+      "difficulty": "intermediate",
+      "lessons": [
+        {
+          "id": 21,
+          "unitId": 5,
+          "order": 1,
+          "emoji": "🚇",
+          "title": "Where Is?",
+          "korean": "어디예요?",
+          "romanization": "eodiyeyo?",
+          "translation": "Where is it?",
+          "difficulty": "intermediate",
+          "hint": "어디 (eodi) means 'where'. Raise your tone at the end for the question."
+        },
+        {
+          "id": 22,
+          "unitId": 5,
+          "order": 2,
+          "emoji": "🚉",
+          "title": "To Station",
+          "korean": "역까지 가주세요",
+          "romanization": "yeokkkaji gajuseyo",
+          "translation": "Please go to the station",
+          "difficulty": "intermediate",
+          "hint": "역 (yeok) means station. 까지 (kkaji) means 'until' or 'to'."
+        },
+        {
+          "id": 23,
+          "unitId": 5,
+          "order": 3,
+          "emoji": "🚕",
+          "title": "Stop Here",
+          "korean": "여기서 세워주세요",
+          "romanization": "yeogiseo sewojuseyo",
+          "translation": "Please stop here",
+          "difficulty": "intermediate",
+          "hint": "여기서 (yeogiseo) means 'here'. 세우다 (seuda) means to stop/park."
+        },
+        {
+          "id": 24,
+          "unitId": 5,
+          "order": 4,
+          "emoji": "⏱️",
+          "title": "How Long?",
+          "korean": "얼마나 걸려요?",
+          "romanization": "eolmana geollyeoyo?",
+          "translation": "How long does it take?",
+          "difficulty": "intermediate",
+          "hint": "얼마나 means 'how much/long'. 걸리다 means 'to take (time)'."
+        },
+        {
+          "id": 25,
+          "unitId": 5,
+          "order": 5,
+          "emoji": "🗺️",
+          "title": "Turn Right",
+          "korean": "오른쪽으로 가세요",
+          "romanization": "oreunjjogeuro gaseyo",
+          "translation": "Go to the right",
+          "difficulty": "intermediate",
+          "hint": "오른쪽 (oreunjjok) is 'right side'. 으로 indicates direction."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "emoji": "👤",
+      "title": "Self Introduction",
+      "description": "Introduce yourself in Korean",
+      "difficulty": "intermediate",
+      "lessons": [
+        {
+          "id": 26,
+          "unitId": 6,
+          "order": 1,
+          "emoji": "👤",
+          "title": "My Name Is",
+          "korean": "제 이름은 ... 입니다",
+          "romanization": "je ireumeun ... imnida",
+          "translation": "My name is ...",
+          "difficulty": "intermediate",
+          "hint": "제 (je) is polite form of 'my'. Replace ... with your name."
+        },
+        {
+          "id": 27,
+          "unitId": 6,
+          "order": 2,
+          "emoji": "🌍",
+          "title": "I'm From",
+          "korean": "저는 ... 에서 왔어요",
+          "romanization": "jeoneun ... eseo wasseoyo",
+          "translation": "I'm from ...",
+          "difficulty": "intermediate",
+          "hint": "에서 (eseo) indicates origin/from. 왔어요 is past tense of 'come'."
+        },
+        {
+          "id": 28,
+          "unitId": 6,
+          "order": 3,
+          "emoji": "💼",
+          "title": "My Job",
+          "korean": "저는 학생이에요",
+          "romanization": "jeoneun haksaengieyo",
+          "translation": "I'm a student",
+          "difficulty": "intermediate",
+          "hint": "학생 (haksaeng) means student. Change to your occupation as needed."
+        },
+        {
+          "id": 29,
+          "unitId": 6,
+          "order": 4,
+          "emoji": "📚",
+          "title": "Learning Korean",
+          "korean": "한국어를 배우고 있어요",
+          "romanization": "hangugeoreul baeugo isseoyo",
+          "translation": "I'm learning Korean",
+          "difficulty": "intermediate",
+          "hint": "배우다 (baeuda) means 'to learn'. 고 있어요 indicates ongoing action."
+        },
+        {
+          "id": 30,
+          "unitId": 6,
+          "order": 5,
+          "emoji": "🤝",
+          "title": "Please Help",
+          "korean": "잘 부탁드립니다",
+          "romanization": "jal butakdeurimnida",
+          "translation": "Please take care of me",
+          "difficulty": "intermediate",
+          "hint": "A humble closing phrase after self-introduction. Shows respect and humility."
+        }
+      ]
+    }
+  ]
+}

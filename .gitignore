@@ -1,0 +1,56 @@
+# iOS
+ios/langu/Secrets.swift
+*.xcuserdata
+*.xcscmblueprint
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.hmap
+.build/
+.swiftpm/
+
+# API
+api/node_modules/
+api/.wrangler/
+api/.dev.vars
+api/terraform/.terraform/
+api/terraform/terraform.tfvars.local
+api/terraform/*.tfstate*
+api/terraform/*.tfplan
+
+# Content Generator
+tools/content-generator/node_modules/
+tools/content-generator/dist/
+tools/content-generator/output/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude/Kiro
+.claude/
+.kiro/

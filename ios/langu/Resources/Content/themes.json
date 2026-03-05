@@ -1,0 +1,94 @@
+{
+  "themes": [
+    {
+      "id": "self_introduction",
+      "emoji": "👤",
+      "name": "Self Introduction",
+      "koreanName": "자기소개",
+      "description": "Introduce yourself: name, age, hobbies, occupation",
+      "keywords": ["이름", "나이", "취미", "직업", "좋아하다", "살다", "저는", "입니다"],
+      "difficulty": "beginner",
+      "minDurationSeconds": 10,
+      "exampleSentences": [
+        "저는 ... 입니다",
+        "제 이름은 ... 이에요",
+        "저는 ... 살이에요"
+      ]
+    },
+    {
+      "id": "ordering_food",
+      "emoji": "🍜",
+      "name": "Ordering Food",
+      "koreanName": "음식 주문",
+      "description": "Order a meal at a Korean restaurant",
+      "keywords": ["주문", "주세요", "먹다", "마시다", "메뉴", "얼마", "맵다", "맛있다"],
+      "difficulty": "beginner",
+      "minDurationSeconds": 10,
+      "exampleSentences": [
+        "이거 주세요",
+        "메뉴판 주세요",
+        "안 맵게 해주세요"
+      ]
+    },
+    {
+      "id": "asking_directions",
+      "emoji": "🗺️",
+      "name": "Asking Directions",
+      "koreanName": "길 묻기",
+      "description": "Ask for and understand directions in Korean",
+      "keywords": ["어디", "가다", "오른쪽", "왼쪽", "직진", "역", "근처", "걸리다"],
+      "difficulty": "intermediate",
+      "minDurationSeconds": 10,
+      "exampleSentences": [
+        "... 어디예요?",
+        "역까지 어떻게 가요?",
+        "얼마나 걸려요?"
+      ]
+    },
+    {
+      "id": "shopping",
+      "emoji": "🛍️",
+      "name": "Shopping",
+      "koreanName": "쇼핑",
+      "description": "Shop at a store: ask prices, sizes, and pay",
+      "keywords": ["사다", "얼마", "카드", "현금", "사이즈", "색깔", "비싸다", "싸다"],
+      "difficulty": "intermediate",
+      "minDurationSeconds": 10,
+      "exampleSentences": [
+        "얼마예요?",
+        "카드로 해주세요",
+        "다른 색 있어요?"
+      ]
+    },
+    {
+      "id": "daily_routine",
+      "emoji": "🌅",
+      "name": "Daily Routine",
+      "koreanName": "일상생활",
+      "description": "Describe your daily routine and habits",
+      "keywords": ["아침", "저녁", "일어나다", "자다", "먹다", "일하다", "운동", "시"],
+      "difficulty": "intermediate",
+      "minDurationSeconds": 15,
+      "exampleSentences": [
+        "아침에 ... 시에 일어나요",
+        "저녁에 운동해요",
+        "매일 ... 해요"
+      ]
+    },
+    {
+      "id": "weekend_plans",
+      "emoji": "🎉",
+      "name": "Weekend Plans",
+      "koreanName": "주말 계획",
+      "description": "Talk about your weekend plans and activities",
+      "keywords": ["주말", "계획", "만나다", "영화", "여행", "쉬다", "같이", "갈 거예요"],
+      "difficulty": "advanced",
+      "minDurationSeconds": 15,
+      "exampleSentences": [
+        "이번 주말에 ... 할 거예요",
+        "친구를 만날 거예요",
+        "영화 볼 거예요"
+      ]
+    }
+  ]
+}
