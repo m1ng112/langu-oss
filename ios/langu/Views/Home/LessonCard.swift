@@ -72,7 +72,7 @@ struct LessonCard: View {
             .overlay(cardOverlay)
             .opacity(isLocked ? 0.7 : 1.0)
         }
-        .buttonStyle(Press3DButtonStyle(pressedScale: 0.95, pressedOffsetY: 3))
+        .buttonStyle(ScalePressButtonStyle())
         .disabled(isLocked)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(AccessibilityLabels.lessonCard(title: lesson.title, korean: lesson.korean, state: state))
