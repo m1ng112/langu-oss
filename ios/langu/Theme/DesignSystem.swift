@@ -1,101 +1,124 @@
 import SwiftUI
 
-// MARK: - Spacing (More generous for touch targets)
+// DESIGN_SPEC: "Minimal × Energetic"
+// No box-shadow. Background color hierarchy for depth: surface → surface2 → white
+// Only 1 looping animation: streak flame pulse (2s)
+// Interaction: transition only (0.12s tap, 0.15s hover)
+
+// MARK: - Spacing
 
 enum AppSpacing {
+    /// Icon-text gap
     static let xs: CGFloat = 4
+    /// 8px
     static let sm: CGFloat = 8
+    /// Card inner padding (small), card gap
     static let md: CGFloat = 12
+    /// Section inner padding
     static let lg: CGFloat = 16
+    /// Card inner padding (standard)
     static let xl: CGFloat = 20
+    /// Screen horizontal margin
     static let xxl: CGFloat = 24
+    /// 32px
     static let xxxl: CGFloat = 32
-    static let huge: CGFloat = 48
+    /// Section gap
+    static let huge: CGFloat = 40
 }
 
-// MARK: - Border Radius (Duolingo-style rounded corners)
+// MARK: - Border Radius
 
 enum AppRadius {
-    /// Small elements (badges, small chips)
+    /// Small elements (badges, chips)
     static let sm: CGFloat = 12
 
-    /// Medium elements (input fields, small cards)
-    static let md: CGFloat = 16
+    /// Medium elements (practice mode cards)
+    static let md: CGFloat = 12
 
-    /// Large elements (cards, modals)
-    static let lg: CGFloat = 20
+    /// Large elements (cards)
+    static let lg: CGFloat = 16
 
-    /// Extra large (big cards, sheets)
-    static let xl: CGFloat = 24
+    /// Extra large (streak banner, mission card)
+    static let xl: CGFloat = 20
 
     /// 2XL for hero cards
-    static let xxl: CGFloat = 28
+    static let xxl: CGFloat = 20
 
     /// Pill shape (buttons, tabs)
     static let pill: CGFloat = 999
 }
 
-// MARK: - Animations (Bouncy, playful)
+// MARK: - Animations
 
 enum AppAnimation {
-    /// Standard spring - bouncy and playful
-    static let spring = Animation.spring(response: 0.35, dampingFraction: 0.7)
+    /// Streak flame pulse — the ONLY looping animation
+    static let pulse = Animation.easeInOut(duration: 2).repeatForever(autoreverses: true)
 
-    /// Bouncy spring for celebrations
-    static let springBouncy = Animation.spring(response: 0.4, dampingFraction: 0.5)
+    /// Page load: section fade-up
+    static let fadeUp = Animation.easeOut(duration: 0.3)
 
-    /// Extra bouncy for rewards
-    static let springPop = Animation.spring(response: 0.3, dampingFraction: 0.4)
+    /// Tap shrink: scale(0.98)
+    static let tap = Animation.easeOut(duration: 0.12)
 
-    /// Quick ease out
-    static let quick = Animation.easeOut(duration: 0.2)
+    /// Hover/state change
+    static let hover = Animation.easeOut(duration: 0.15)
 
-    /// Smooth ease out
-    static let easeOut = Animation.easeOut(duration: 0.3)
+    /// Legacy aliases
+    static let spring = Animation.easeOut(duration: 0.15)
+    static let springBouncy = Animation.easeOut(duration: 0.15)
+    static let springPop = Animation.easeOut(duration: 0.12)
+    static let quick = Animation.easeOut(duration: 0.12)
+    static let easeOut = Animation.easeOut(duration: 0.15)
+    static let slow = Animation.easeOut(duration: 0.3)
 
-    /// Slow for background effects
-    static let slow = Animation.easeInOut(duration: 0.6)
-
-    /// Staggered animation for lists
-    static func stagger(index: Int, base: Double = 0.04) -> Animation {
-        .spring(response: 0.35, dampingFraction: 0.7).delay(Double(index) * base)
+    /// Staggered fade-up for lists
+    static func stagger(index: Int, base: Double = 0.1) -> Animation {
+        .easeOut(duration: 0.3).delay(Double(index) * base)
     }
 }
 
-// MARK: - Shadows (Soft and subtle)
+// MARK: - Shadows (Kept for backward compat, but zeroed out per spec)
 
 enum AppShadow {
-    static let sm = (color: Color.black.opacity(0.04), radius: CGFloat(4), x: CGFloat(0), y: CGFloat(2))
-    static let md = (color: Color.black.opacity(0.06), radius: CGFloat(8), x: CGFloat(0), y: CGFloat(4))
-    static let lg = (color: Color.black.opacity(0.08), radius: CGFloat(16), x: CGFloat(0), y: CGFloat(8))
+    /// No shadow — use surface color hierarchy instead
+    static let sm = (color: Color.clear, radius: CGFloat(0), x: CGFloat(0), y: CGFloat(0))
+    static let md = (color: Color.clear, radius: CGFloat(0), x: CGFloat(0), y: CGFloat(0))
+    static let lg = (color: Color.clear, radius: CGFloat(0), x: CGFloat(0), y: CGFloat(0))
 
-    /// Colored shadow for accent elements
     static func colored(_ color: Color) -> (color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) {
-        (color: color.opacity(0.25), radius: 12, x: 0, y: 6)
+        (color: Color.clear, radius: 0, x: 0, y: 0)
     }
 }
 
 // MARK: - View Modifiers
 
-/// Rounded card style with soft shadow
+/// Card style using background color hierarchy (no shadow)
 struct CardStyle: ViewModifier {
-    var padding: CGFloat = AppSpacing.lg
+    var padding: CGFloat = AppSpacing.xl
 
     func body(content: Content) -> some View {
         content
             .padding(padding)
-            .background(Color.appCardBg)
+            .background(Color.surface2)
             .clipShape(RoundedRectangle(cornerRadius: AppRadius.xl, style: .continuous))
-            .shadow(color: AppShadow.md.color, radius: AppShadow.md.radius, x: AppShadow.md.x, y: AppShadow.md.y)
     }
 }
 
-/// Pill-shaped button style
+/// Scale-on-press button style — does NOT block ScrollView gestures
+struct ScalePressButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
+            .animation(.easeOut(duration: 0.12), value: configuration.isPressed)
+    }
+}
+
+/// Pill-shaped button — accent color
 struct PillButtonStyle: ButtonStyle {
     let color: Color
     let textColor: Color
 
-    init(color: Color = .appGreen, textColor: Color = .white) {
+    init(color: Color = .appAccent, textColor: Color = .white) {
         self.color = color
         self.textColor = textColor
     }
@@ -108,8 +131,8 @@ struct PillButtonStyle: ButtonStyle {
             .padding(.vertical, AppSpacing.md)
             .background(color)
             .clipShape(Capsule())
-            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
-            .animation(.spring(response: 0.2, dampingFraction: 0.6), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
+            .animation(AppAnimation.tap, value: configuration.isPressed)
     }
 }
 
@@ -117,7 +140,7 @@ struct PillButtonStyle: ButtonStyle {
 struct SecondaryPillButtonStyle: ButtonStyle {
     let color: Color
 
-    init(color: Color = .appGreen) {
+    init(color: Color = .appAccent) {
         self.color = color
     }
 
@@ -130,45 +153,32 @@ struct SecondaryPillButtonStyle: ButtonStyle {
             .background(color.opacity(0.12))
             .clipShape(Capsule())
             .overlay(Capsule().strokeBorder(color.opacity(0.2), lineWidth: 1.5))
-            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
-            .animation(.spring(response: 0.2, dampingFraction: 0.6), value: configuration.isPressed)
+            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
+            .animation(AppAnimation.tap, value: configuration.isPressed)
     }
 }
 
-/// Pop-in animation modifier
+/// Fade-up entrance modifier (replaces pop-in)
 struct PopInModifier: ViewModifier {
     let isVisible: Bool
     let delay: Double
 
     func body(content: Content) -> some View {
         content
-            .scaleEffect(isVisible ? 1 : 0.7)
             .opacity(isVisible ? 1 : 0)
-            .animation(.spring(response: 0.35, dampingFraction: 0.65).delay(delay), value: isVisible)
+            .offset(y: isVisible ? 0 : 16)
+            .animation(.easeOut(duration: 0.3).delay(delay), value: isVisible)
     }
 }
 
-/// 3D press button style - uses ButtonStyle for proper scroll gesture handling
-struct Press3DButtonStyle: ButtonStyle {
-    var pressedScale: CGFloat = 0.96
-    var pressedOffsetY: CGFloat = 2
-
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .scaleEffect(configuration.isPressed ? pressedScale : 1.0)
-            .offset(y: configuration.isPressed ? pressedOffsetY : 0)
-            .animation(.spring(response: 0.2, dampingFraction: 0.6), value: configuration.isPressed)
-    }
-}
-
-/// Bounce effect on tap
+/// Tap shrink modifier (subtle, 0.98 scale)
 struct BounceModifier: ViewModifier {
     @State private var isPressed = false
 
     func body(content: Content) -> some View {
         content
-            .scaleEffect(isPressed ? 0.92 : 1.0)
-            .animation(.spring(response: 0.2, dampingFraction: 0.5), value: isPressed)
+            .scaleEffect(isPressed ? 0.98 : 1.0)
+            .animation(AppAnimation.tap, value: isPressed)
             .simultaneousGesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { _ in isPressed = true }
@@ -177,21 +187,20 @@ struct BounceModifier: ViewModifier {
     }
 }
 
-/// Floating card style (elevated)
+/// Elevated card using white background (highest level)
 struct FloatingCardStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .padding(AppSpacing.lg)
-            .background(Color.appCardBg)
-            .clipShape(RoundedRectangle(cornerRadius: AppRadius.xxl, style: .continuous))
-            .shadow(color: AppShadow.lg.color, radius: AppShadow.lg.radius, x: AppShadow.lg.x, y: AppShadow.lg.y)
+            .padding(AppSpacing.xl)
+            .background(Color.white)
+            .clipShape(RoundedRectangle(cornerRadius: AppRadius.xl, style: .continuous))
     }
 }
 
 // MARK: - View Extensions
 
 extension View {
-    func cardStyle(padding: CGFloat = AppSpacing.lg) -> some View {
+    func cardStyle(padding: CGFloat = AppSpacing.xl) -> some View {
         modifier(CardStyle(padding: padding))
     }
 
@@ -212,8 +221,8 @@ extension View {
         clipShape(RoundedRectangle(cornerRadius: radius, style: .continuous))
     }
 
-    /// Soft shadow
+    /// No-op for backward compat (shadows removed per spec)
     func softShadow() -> some View {
-        shadow(color: AppShadow.md.color, radius: AppShadow.md.radius, x: AppShadow.md.x, y: AppShadow.md.y)
+        self
     }
 }

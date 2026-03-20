@@ -30,35 +30,45 @@ docs/                 # Technical documentation
 
 ### Visual Style
 
-**Duolingo-inspired rounded design:**
-- Rounded corners (12-28pt radius)
-- Soft shadows
-- Capsule-shaped buttons
-- Playful emoji integration
-- Spring animations
+**"Minimal x Energetic" design:**
+- No box-shadows; depth via background color hierarchy (surface -> surface2 -> white)
+- Only 1 looping animation: streak flame pulse (2s)
+- Interactions use fast transitions (0.12s tap, 0.15s hover)
+- Accent is #ff4c2b only. No purple gradients.
+- Fonts: Syne (headings/numbers) + DM Sans (body/UI)
 
 ### Colors
 
 ```swift
-appGreen:    #22C55E  // Success, primary action
-appBlue:     #3B82F6  // Info, links
-appPurple:   #8B5CF6  // Accent
-appYellow:   #F59E0B  // Warning, XP
-appOrange:   #F97316  // Accent
-appRed:      #EF4444  // Error, needs improvement
+// Brand
+appAccent:   #FF4C2B  // CTA, streak, XP bar, active state
+accentWarm:  #FF8C42  // Gradient pair with accent
+accentLight: #FFF1EE  // Light accent background
+
+// Semantic
+appGreen:    #1DBA82  // SRS safe, success (asset catalog)
+appGold:     #F5A623  // SRS today, warning
+appBlue:     #2F6BFF  // Info, vocabulary
+
+// Neutrals
+ink:         #0E0E0F  // Primary text
+ink2:        #3A3A3C  // Secondary text
+ink3:        #8E8E93  // Placeholder, caption
+surface:     #E8DCC8  // App background (warm parchment)
+surface2:    #D6C9B0  // Card background (warm stone)
 
 // Score colors (use Color.scoreColor(for: score))
-90-100: appGreen | 70-89: appBlue | 50-69: appYellow | 0-49: appRed
+90-100: appGreen | 70-89: appBlue | 50-69: appGold | 0-49: appAccent
 ```
 
 ### Spacing / Radius / Typography
 
 ```swift
-AppSpacing: xs(4) sm(8) md(12) lg(16) xl(20) xxl(24) xxxl(32)
-AppRadius:  sm(12) md(16) lg(20) xl(24) xxl(28) pill(999)
-AppFont:    title() headline() body() caption() timer() koreanPrompt()
-AppAnimation: spring, springBouncy, quick, slow
-AppShadow:  sm, md, lg
+AppSpacing: xs(4) sm(8) md(12) lg(16) xl(20) xxl(24) xxxl(32) huge(40)
+AppRadius:  sm(12) md(12) lg(16) xl(20) xxl(20) pill(999)
+AppFont:    title() headline() body() caption() timer() koreanPrompt() scoreDisplay() sectionLabel() cardTitle()
+AppAnimation: pulse, fadeUp, tap, hover, stagger(index:)
+AppShadow:  zeroed out (use color hierarchy instead)
 ```
 
 ## Architecture Patterns

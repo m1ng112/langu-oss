@@ -296,7 +296,7 @@ private struct UnitSection: View {
                 .clipShape(RoundedRectangle(cornerRadius: AppRadius.xl, style: .continuous))
                 .opacity(isUnitLocked ? 0.7 : 1.0)
             }
-            .buttonStyle(Press3DButtonStyle(pressedScale: 0.96, pressedOffsetY: 2))
+            .buttonStyle(ScalePressButtonStyle())
             .disabled(isUnitLocked)
             .popIn(isVisible: appeared, delay: 0.1 + Double(unitIndex) * 0.05)
 
